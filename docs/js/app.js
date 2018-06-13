@@ -34,16 +34,16 @@ function submitInput() {
 
     card.className = 'card card--back';
 
-    compliments = ['but you are a human equivalent of a unicorn', 
-        'but Einstein would be jealous of your brain', 
-        'but you\'re smarter than Google and Lisa Simpson combined', 
-        'but you\'re hotter than Jon Snow and Khaleesi combined', 
-        'but you\'re every dog\'s favorite person', 
-        'but you\'re a great person to do group projects with', 
-        'but your karaoke performances put Beyonce to shame', 
-        'but you do wake up flawless', 
-        'but you\'re a human equivalent of pizza',
-        'but you\'re such a badass you would make Voldemort run for the      hills'];
+    compliments = [`but you are a human equivalent of a unicorn`, 
+        `but Einstein would be jealous of your brain`, 
+        `but you're smarter than Google and Lisa Simpson combined`, 
+        `but you're hotter than Jon Snow and Khaleesi combined`, 
+        `but you're every dog's favorite person`, 
+        `but you're a great person to do group projects with`, 
+        `but your karaoke performances put Beyonce to shame`, 
+        `but you do wake up flawless`, 
+        `but you're a human equivalent of pizza`,
+        `but you're such a badass you would make Voldemort run for the hills`];
 
     const randomIndex = Math.floor(Math.random() * compliments.length);
     cardText.textContent = compliments[randomIndex];
