@@ -1,4 +1,4 @@
-// 'use strict';
+'use strict';
 
 var html = document.querySelector('html');
 var wrapper = document.querySelector('.wrapper');
@@ -17,7 +17,10 @@ function loadEventListeners() {
 }
 
 function docLoaded() {
-    html.style = 'animation: gradientDark 1s ease-in;\n                  animation-fill-mode: forwards';
+    // html.style = `animation: gradientDark 1s ease-in;
+    //               animation-fill-mode: forwards`;
+
+    html.className = 'dark';
 }
 
 function inputBinding() {
@@ -26,7 +29,10 @@ function inputBinding() {
 
 function submitInput() {
     if (input.value !== '') {
-        html.style = 'animation: gradientLight 1.5s ease-in;\n                  animation-fill-mode: forwards';
+        // html.style = `animation: gradientLight 1.5s ease-in;
+        //               animation-fill-mode: forwards`;
+
+        html.className = 'light';
 
         input.value = '';
         input.style.display = 'none';

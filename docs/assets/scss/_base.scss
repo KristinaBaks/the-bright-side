@@ -18,3 +18,21 @@ body {
   text-align: center;
   min-height: 100%;
 }
+
+//----- CLASSES ADDED TO THE HTML BY JS:
+
+.dark {
+  background-image: linear-gradient(to left bottom, #302f5b, #a01b69); // fallback
+  animation-name: gradientDark;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+}
+
+.light {
+  background-image: linear-gradient(to left bottom, #f1b218, #f827a2); // fallback
+  animation-name: gradientLight;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+}
