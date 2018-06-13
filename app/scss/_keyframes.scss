@@ -1,0 +1,34 @@
+
+@keyframes gradientLight {
+    0% {
+      opacity: .1;
+      background-image: linear-gradient(to left bottom, #f1b218, #f827a2);
+    }
+    30% {
+      opacity: .4;
+      background-image: linear-gradient(to left bottom, #f1b218, #f827a2);
+    }
+    60% {
+      opacity: .7;
+      background-image: linear-gradient(to left bottom, #f1b218, #f827a2);
+    }
+    100% {
+      opacity: 1;
+      background-image: linear-gradient(to left bottom, #f1b218, #f827a2);
+    }
+}
+
+@keyframes gradientDark {
+  0% {
+    opacity: .1;
+    background-image: linear-gradient(to left bottom, #302f5b, #a01b69);
+  }
+  50% {
+    opacity: .5;
+    background-image: linear-gradient(to left bottom,  #302f5b, #a01b69);
+  }
+  100% {
+    opacity: 1;
+    background-image: linear-gradient(to left bottom,  #302f5b, #a01b69);
+  }
+}

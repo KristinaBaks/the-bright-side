@@ -1,0 +1,50 @@
+
+@media only screen and (min-width: 125em) {
+  html {
+    font-size: 90%;
+  }
+}
+
+@media only screen and (min-width: 90em) {
+  .header-box {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 59.3em) {
+  html {
+    font-size: 55%;
+  }
+  .header-box {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .card {
+    max-width: 70%;
+  }
+}
+
+@media only screen and (max-width: 27em) {
+  html {
+    font-size: 50%;
+  }
+  .wrapper {
+    padding-top: 5rem;
+  }
+  .header-box {
+    width: 90%;
+    margin: 0 auto;
+
+    &__subtitle {
+      padding-top: 1.5rem;
+      line-height: 1.5;
+    }
+  }
+  .input {
+    margin: 0rem;
+  }
+  .card {
+    margin: 3rem auto;
+  }
+}

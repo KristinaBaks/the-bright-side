@@ -1,0 +1,109 @@
+.wrapper {
+    padding-top: 8rem;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.header-box  {
+    
+  &__title {
+    font-size: 6rem;
+    font-weight: 600;
+    word-wrap: break-word;
+  }
+  
+  &__subtitle {
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 2;
+    word-spacing: 4px;
+    letter-spacing: .5px;
+    word-wrap: break-word;
+  }
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.2);
+  max-width: 60rem;
+  min-height: 10rem;
+  margin: 6rem auto 3rem auto;
+  padding: 4rem;
+  overflow: hidden;
+  transition: all 2s;
+
+    
+  &--back {
+      transform: rotateY(180deg);
+  }
+  
+  &--back .card__text {
+      transform: rotateY(180deg);
+  }
+  
+  &__text {
+      font-size: 1.7rem;
+      letter-spacing: 3px;
+      font-weight: 500;
+      line-height: 3.5rem;
+      vertical-align: middle; 
+      word-wrap: break-word; 
+  }
+}
+
+.input {
+  margin: 3rem 0;
+  height: 5rem;
+  width: 60%;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  border-bottom: 1px solid #fff;
+  text-decoration: none;
+  text-align: inherit;
+  font-family: inherit;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+  color: #fff;
+  transition: all .2s ease-in-out; 
+
+  &:focus {
+      outline: none;
+      text-decoration: none;
+    }
+}
+
+::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.input:focus::-webkit-input-placeholder {
+  visibility: hidden;
+}
+
+.button:link,
+.button:visited {
+  margin: 3rem 0;
+  padding: 1.5rem 2rem;
+  display: inline-block;
+  font-size: 1.3rem;
+  letter-spacing: 3px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  border-radius: 10rem;
+  backface-visibility: none;
+  transform: translateY(0);
+  transition: all 0.3s;
+}
+
+.button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.button:active {
+  transform: translateY(3px);
+  box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.15);
+}
