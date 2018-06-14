@@ -1,4 +1,4 @@
-// 'use strict';
+'use strict';
 
 var html = document.querySelector('html');
 var wrapper = document.querySelector('.wrapper');

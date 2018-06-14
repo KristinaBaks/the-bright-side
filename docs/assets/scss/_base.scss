@@ -1,16 +1,18 @@
-* {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
 }
 
 html {
+  box-sizing: border-box;
   font-size: 62.5%;
   background-repeat: no-repeat;
 }
 
 body {
-  box-sizing: border-box;
   font-family: "Lato", sans-serif;
   color: #fff;
   text-transform: uppercase;
