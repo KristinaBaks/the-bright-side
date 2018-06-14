@@ -46,7 +46,7 @@ function submitInput() {
 
         btn.className = 'button reload';
         btn.textContent = 'Great! But I\'m still a little down';
-    } else {
+    } else if (input.value === '') {
         card.className = 'card card--back';
 
         cardText.textContent = 'Feeling good already? Awesome!';
@@ -58,6 +58,7 @@ function submitInput() {
 }
 
 function reloadPage(e) {
+    cardText.textContent = '';
     if (e.target.className === 'button reload') {
         window.location.reload();
     }
